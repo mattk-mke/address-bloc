@@ -49,6 +49,10 @@ module.exports = class MenuController {
     this.main();
   }
 
+  getContactCount() {
+    return this.contacts.length;
+  }
+
   getDate() {
     this.clear();
     let timestamp = new Date().toLocaleString('en-US')
